@@ -24,5 +24,8 @@ git reset --hard origin/master 本地同步
 分支操作
 git checkout -b branchName 创建名为branchName的分支
 git checkout master        切换至master分支
-git branch -d branchName   删除名为branchName的分支
+git branch -d branchName        本地   删除名为branchName的分支
+git branch -a 查看本地与远端所有分支
+git push origin --delete guid   远端
+git push origin :branchName
 git push origin branchName 将分支推送到远端仓库
