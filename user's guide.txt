@@ -1,0 +1,28 @@
+创建ssh key
+ssh-leygen -t rsa -C "313356415@qq.com"
+
+配置
+git config --global user.name "Ucastu"
+git config --global user.emali "313356415@qq.com"
+
+git remote add origin git@github,com:Ucastu/informa.git
+
+git clone /path/to/repository  创建本地库clone
+
+git add filename     添加文件
+git commit -m ""     提交到HEAD
+
+git push origin master 提交到远端仓库
+
+git pull 更新改动
+
+git checkout filename 同步单个文件
+
+git fetch origin     获取远端仓库
+git reset --hard origin/master 本地同步
+
+分支操作
+git checkout -b branchName 创建名为branchName的分支
+git checkout master        切换至master分支
+git branch -d branchName   删除名为branchName的分支
+git push origin branchName 将分支推送到远端仓库
