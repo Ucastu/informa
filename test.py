@@ -14,3 +14,4 @@ word_counts
 from collections import Counter
 document = ('dasd','asd2qwd','asdasd','dasd','asd2qwd')
 word_counts = Counter(document)
+########################################
