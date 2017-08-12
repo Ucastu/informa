@@ -44,5 +44,4 @@ for k = M:length(xn)
     x = xn(k:-1:k-M+1);
     yn(k) = W(:,end).'* x;
 end
-1
 
