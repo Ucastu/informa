@@ -16,7 +16,7 @@ document = ('dasd','asd2qwd','asdasd','dasd','asd2qwd')
 word_counts = Counter(document)
 
 ########################################
-#e for set {}创建缺省为dict 
+#集合 e for set {}创建缺省为dict 
 ########################################
 ex = set()
 ex.add(1)
