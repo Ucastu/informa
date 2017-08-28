@@ -230,3 +230,97 @@ z = {"z" : 3}
 g = double_correct(f)
 print (g(1,2,3))
 
+########################################
+'''
+matplotelib.pyplot
+'''
+########################################
+
+import matplotlib.pyplot as plt
+
+x = ['1','2','3','4',5] #？？？？
+y = [41,51,65,29,23]
+y_ = [11,41,35,25,3]
+
+#line plot
+plt.figure('line')
+plt.plot(x,y,color = 'black',marker = 'o',linestyle = 'solid')
+plt.plot(x,y_,'g-',marker = 'o',label = ' bias^2')
+
+plt.title('line')
+plt.xlabel('x')
+plt.ylabel('y')
+
+#bar plot
+'''
+条形的默认宽度是0.8，因此对左侧坐标加0.1
+xs = [i + 0.1 for i,_ in enumerate(x)]
+(python3 中已解决)
+enumerate return索引
+将条形放置在中心
+'''
+xs = [i + 4 for i,_ in enumerate(x)]
+
+#x[0] = 1
+
+#使用左侧x坐标[xs]和高度[y]绘制条形图
+plt.figure('bar')
+plt.bar(xs,y)
+
+#控制坐标轴范围
+plt.axis([0,10,0,70])
+
+#为条形图增加标题
+#plt.xticks(xs , x)
+
+#point plot
+plt.figure('point')
+plt.scatter(y_,y)
+
+#每个点添加标记
+for num,y_num,ynum in zip(x,y_,y):
+	plt.annotate(num,     #标记
+		xy = (y_num,ynum), #标记点
+		xytext=(-5,5),		#标记偏移
+		textcoords = 'offset points')
+
+plt.title('point')
+plt.xlabel('y_')
+plt.ylabel('y')
+plt.axis('equal')
+
+plt.show()
+
+########################################
+'''
+线性代数
+'''
+########################################
+
+#1 向量
+#多用于表示多维数据
+
+#2 矩阵
+'''
+2.1  表示多个多维数据的集合
+2.2  表示 n*k 线性函数 将 k维 向量投影到 n维
+2.3  表示二维关系
+'''
+
+########################################
+'''
+统计学
+'''
+########################################
+
+
+
+
+
+
+
+
+
+
+
+
